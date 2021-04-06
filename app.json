@@ -1,7 +1,29 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/post/post",
+    "pages/user/user"
   ],
+  "tabBar": {
+    "color": "#CDCDCD",
+    "selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Home",
+      "iconPath": "images/home_grey.png",
+      "selectedIconPath": "images/home_black.png"
+    }, {
+      "pagePath": "pages/post/post",
+      "text": "Post",
+      "iconPath": "images/post_grey.png",
+      "selectedIconPath": "images/post_black.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "User",
+      "iconPath": "images/profile_grey.png",
+      "selectedIconPath": "images/profile_black.png"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
