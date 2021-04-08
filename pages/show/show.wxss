@@ -1,0 +1,57 @@
+/* pages/show/show.wxss */
+.container {
+  padding: 0 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  margin: 5px auto;
+}
+
+.user-image {
+  border-radius:50%;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin: 8px;
+}
+
+.like-icon {
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  padding:10px;
+}
+
+.user-info {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  padding: 0 5px
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.card-info {
+  font-size: 16px;
+  margin: 5px 10px;
+}

@@ -1,0 +1,19 @@
+<!--pages/show/show.wxml-->
+<view class="container">
+  <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+ 
+  <view class="card-footer">
+     <view class="user-info">
+      <image src="/images_index/UserImage.jpeg" class="user-image" /> 
+      <text>Eden Zou</text>
+     </view>
+
+     <view class="likes">
+       <image src="/images/like.png" class="like-icon" />
+     </view>     
+   </view>
+
+   <view class="card-header">饭店打卡😋</view>
+   <view class="card-info">种草了很久的饭店打卡</view>
+  </view>
+ 
