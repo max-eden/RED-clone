@@ -1,1 +1,68 @@
 /* pages/post/post.wxss */
+/**index.wxss**/
+.container {
+  padding: 0 10px;
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.cards{
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-information h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.user-image {
+  border-radius:50%;
+  height: 30px;
+  width: 30px;
+  padding:10px;
+  object-fit: cover;
+}
+
+.like-icon {
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  padding:10px;
+}
+
+.card-footer h2 {
+  font-size: 15px;
+  color: rgba(230,230,230,1.0);
+  font-weight: normal;
+}
+
+.user-info {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.likes {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 5px 10px;
+}

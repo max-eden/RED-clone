@@ -1,2 +1,15 @@
 <!--pages/post/post.wxml-->
-<text>pages/post/post.wxml</text>
+<image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+<view class="card-footer">
+     <view class="user-info">
+       <image src="https://kitt.lewagon.com/placeholder/users/cveneziani" class="user-image" />
+       <text>Eden Zou</text>
+     </view>
+
+     <view class="likes">
+       <image src="/images/like.png" class="like-icon" />
+     </view>
+
+   </view>

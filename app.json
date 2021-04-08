@@ -17,11 +17,6 @@
       "text": "Post",
       "iconPath": "images/post_grey.png",
       "selectedIconPath": "images/post_black.png"
-    }, {
-      "pagePath": "pages/user/user",
-      "text": "User",
-      "iconPath": "images/profile_grey.png",
-      "selectedIconPath": "images/profile_black.png"
     }]
   },
   "window":{
