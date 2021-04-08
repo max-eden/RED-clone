@@ -13,7 +13,7 @@
   
     <view class="card-footer">
       <view class="user-info">
-        <image src="https://kitt.lewagon.com/placeholder/users/cveneziani" class="user-image" />
+        <image src="/images_index/UserImage.jpeg" class="user-image" />
         <text>Eden Zou</text>
       </view>
 
@@ -32,7 +32,7 @@
  
    <view class="card-footer">
      <view class="user-info">
-       <image src="https://kitt.lewagon.com/placeholder/users/cveneziani" class="user-image" />
+       <image src="/images_index/UserImage.jpeg" class="user-image" />
        <text>Eden Zou</text>
      </view>
 
@@ -51,7 +51,7 @@
  
    <view class="card-footer">
      <view class="user-info">
-       <image src="https://kitt.lewagon.com/placeholder/users/cveneziani" class="user-image" />
+       <image src="/images_index/UserImage.jpeg" class="user-image" />
        <text>Eden Zou</text>
      </view>
 
