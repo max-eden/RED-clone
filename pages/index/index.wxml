@@ -1,23 +1,66 @@
 <!--index.wxml-->
+<!-- <view class="navigation">
+      <img src="#" class="logo" />
+      <view class=categoty></view>
+</view> -->
+
 <view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+
+  <view class="cards">
+   
+    <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+    <text class="card-information">List of Restaurants</text>
+  
+    <view class="card-footer">
+      <view class="user-info">
+        <image src="/images_index/UserImage.jpeg" class="user-image" />
+        <text>Eden Zou</text>
       </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+
+      <view class="likes">
+        <image src="/images/like.png" class="like-icon" />
+      </view>
+
+    </view>
+
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+  <view class="cards">
+   
+   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+   <view class="card-footer">
+     <view class="user-info">
+       <image src="/images_index/UserImage.jpeg" class="user-image" />
+       <text>Eden Zou</text>
+     </view>
+
+     <view class="likes">
+       <image src="/images/like.png" class="like-icon" />
+     </view>
+
+   </view>
+
+ </view>
+
+ <view class="cards">
+   
+   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+   <view class="card-footer">
+     <view class="user-info">
+       <image src="/images_index/UserImage.jpeg" class="user-image" />
+       <text>Eden Zou</text>
+     </view>
+
+     <view class="likes">
+       <image src="/images/like.png" class="like-icon" />
+     </view>
+
+   </view>
+
+ </view>
 </view>
+
