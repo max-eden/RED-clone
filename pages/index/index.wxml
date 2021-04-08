@@ -5,23 +5,35 @@
 </view> -->
 
 <view class="container">
-
   <view class="cards">
    
-    <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-    <text class="card-information">List of Restaurants</text>
-  
-    <view class="card-footer">
-      <view class="user-info">
-        <image src="/images_index/UserImage.jpeg" class="user-image" />
-        <text>Eden Zou</text>
-      </view>
-
+   <image src="/images_index/Restaurant_01.jpeg" mode="widthFix" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+   <view class="card-footer">
+      <image src="/images_index/UserImage.jpeg" class="user-image" />
+      <text class="user-info">Eden Zou</text>
       <view class="likes">
         <image src="/images/like.png" class="like-icon" />
       </view>
-
     </view>
+
+  </view>
+
+ <view class="cards">
+   
+   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+   <view class="card-footer">
+    
+    <image src="/images_index/UserImage.jpeg" class="user-image" />
+    <text class="user-info">Eden Zou</text>
+    <view class="likes">
+       <image src="/images/like.png" class="like-icon" />
+     </view>
+
+   </view>
 
   </view>
 
@@ -31,16 +43,13 @@
    <text class="card-information">List of Restaurants</text>
  
    <view class="card-footer">
-     <view class="user-info">
-       <image src="/images_index/UserImage.jpeg" class="user-image" />
-       <text>Eden Zou</text>
-     </view>
-
-     <view class="likes">
-       <image src="/images/like.png" class="like-icon" />
-     </view>
-
-   </view>
+    
+    <image src="/images_index/UserImage.jpeg" class="user-image" />
+    <text class="user-info">Eden Zou</text>
+    <view class="likes">
+      <image src="/images/like.png" class="like-icon" />
+    </view>
+  </view>
 
  </view>
 
@@ -50,17 +59,46 @@
    <text class="card-information">List of Restaurants</text>
  
    <view class="card-footer">
-     <view class="user-info">
-       <image src="/images_index/UserImage.jpeg" class="user-image" />
-       <text>Eden Zou</text>
-     </view>
+    
+    <image src="/images_index/UserImage.jpeg" class="user-image" />
+    <text class="user-info">Eden Zou</text>
+    <view class="likes">
+      <image src="/images/like.png" class="like-icon" />
+    </view>
+  </view>
+  
+ </view>
 
-     <view class="likes">
-       <image src="/images/like.png" class="like-icon" />
-     </view>
+ <view class="cards">
+   
+   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+   <view class="card-footer">
+    
+    <image src="/images_index/UserImage.jpeg" class="user-image" />
+    <text class="user-info">Eden Zou</text>
+    <view class="likes">
+      <image src="/images/like.png" class="like-icon" />
+    </view>
+  </view>
+  
+ </view>
 
-   </view>
-
+ <view class="cards">
+   
+   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
+   <text class="card-information">List of Restaurants</text>
+ 
+   <view class="card-footer">
+    
+    <image src="/images_index/UserImage.jpeg" class="user-image" />
+    <text class="user-info">Eden Zou</text>
+    <view class="likes">
+      <image src="/images/like.png" class="like-icon" />
+    </view>
+  </view>
+  
  </view>
 </view>
 
