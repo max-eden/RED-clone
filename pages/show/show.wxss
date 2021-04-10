@@ -5,7 +5,7 @@
 
 .card-image {
   width: 100%;
-  height: 480px;
+  height: 900rpx;
   object-fit: cover;
   margin: 5px auto;
 }
