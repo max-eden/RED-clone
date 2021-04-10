@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/post/post",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/show/show"
   ],
   "tabBar": {
     "color": "#CDCDCD",
