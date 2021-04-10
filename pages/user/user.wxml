@@ -1,2 +1,9 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="container">
+  <view class="user-info">
+      <image src="/images_index/UserImage.jpeg" class="user-image" />
+      <view class="user-header">Eden Zou</view>
+
+  </view>
+</view>
+ 
