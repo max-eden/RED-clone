@@ -27,9 +27,9 @@ Page({
 
   
   toPost: function(e) {
-    console.log('test', e)
+    console.log('test', e.currentTarget.dataset.id)
     wx.navigateTo({
-      url: '../show/show',
+      url: `/pages/show/show?id=${e.currentTarget.dataset.id}`
       // url: `/pages/show/detail?id=${e.currentTarget.dataset.id}`,
     })
 

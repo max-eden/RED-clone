@@ -6,11 +6,13 @@ Page({
   },
 
   onLoad: function (options) {
+    console.log("??", options)
+    let self = this
     let posts = new wx.BaaS.TableObject('posts')
     posts.get(options.id).then((res) => {
-      console.log('res', res)
+      console.log('post', res.data)
       self.setData({
-        restaurant: res.data
+        post: res.data
       })
     }, (err) => {
     })
