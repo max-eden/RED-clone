@@ -1,8 +1,7 @@
 <!--index.wxml-->
-<!-- <view class="navigation">
-      <img src="#" class="logo" />
-      <view class=categoty></view>
-</view> -->
+<view class="SearchBar">
+  <search-bar clear show-cancel value="{{ value }}" controlled placeholder="Search" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="onCancel" />
+</view>
 
 <view class="container">
   <view class="cards">

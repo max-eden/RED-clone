@@ -9,7 +9,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
+    value: '',
   },
   // 事件处理函数
   bindViewTap() {
@@ -44,5 +45,30 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+  onChange(e) {
+    console.log('onChange', e)
+    this.setData({
+        value: e.detail.value,
+    })
+},
+onFocus(e) {
+    console.log('onFocus', e)
+},
+onBlur(e) {
+    console.log('onBlur', e)
+},
+onConfirm(e) {
+    console.log('onConfirm', e)
+},
+onClear(e) {
+    console.log('onClear', e)
+    this.setData({
+        value: '',
+    })
+},
+onCancel(e) {
+    console.log('onCancel', e)
+},
 })

@@ -1,15 +1,24 @@
 <!--pages/post/post.wxml-->
-<image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
+<form>
+  <text class="sectionLabel">Image</text>
+  <view class="section">
+    <view class="image-upload" bindtap="uploadImage">
+      <input name="postPicture" label="postPicture" type="file" placeholder="Upload your images" style="height: 300px" />
+    </view>
+  </view>
  
-<view class="card-footer">
-     <view class="user-info">
-       <image src="https://kitt.lewagon.com/placeholder/users/cveneziani" class="user-image" />
-       <text>Eden Zou</text>
-     </view>
+  <text class="sectionLabel">Title</text>
+  <view class="section">
+    <textarea name="postTitle" label="postTitle" placeholder="Write your review title here" style="height: 50px"/>
+  </view>
 
-     <view class="likes">
-       <image src="/images/like.png" class="like-icon" />
-     </view>
+  <text class="sectionLabel">Review</text>
+  <view class="section">
+    <textarea name="postContent" label="postContent" placeholder="Write your review here" style="height: 200px;"/>
+  </view>
 
-   </view>
+  <view class="btn-area">
+    <button type="primary" bindtap="formSubmit">Submit</button>
+  </view>
+
+</form>
