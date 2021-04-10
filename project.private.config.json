@@ -1,0 +1,35 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "post_new",
+          "pathName": "pages/post_new/post_new",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "show_page",
+          "pathName": "pages/show/show",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

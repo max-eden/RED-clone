@@ -5,62 +5,43 @@ Page({
    * Page initial data
    */
   data: {
-
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
+  onLoad(){
+    let posts = new wx.BaaS.TableObject('posts')
+    this.setData({
+      posts: posts
+    })
   },
 
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
+  uploadImage: function() {
+    const self = this
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original'],
+      sourceType: ['album', 'camera'],
+      success: function (res) {
+        let File = new wx.BaaS.File()
+        let fileParams = {filePath: res.tempFilePaths[0]}
+        let metaData = {categoryName: 'picture'}
+        File.upload(fileParams, metaData).then(res => {
+          console.log('image',res)  
+          self.setData ({
+            picture: res.data.path
+          })
+        })
+      }
+    }) 
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
+  // previewMyImages: function(files) {
+  //   wx.previewImage({
+  //     current: '',  // number of index or file path
+  //     urls: files  // Array of temp files
+  //   })
+  // },
 
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
+  formSubmit: function() {
+    
   }
 })

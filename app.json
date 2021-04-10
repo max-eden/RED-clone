@@ -2,8 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/post/post",
-    "pages/user/user"
-  ],
+    "pages/user/user",
+    "pages/show/show",
+    "pages/post_new/post_new"
+  ],  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "可以知道你在哪里嘛？"
+    }
+  },
   "tabBar": {
     "color": "#CDCDCD",
     "selectedColor": "#000000",
@@ -17,17 +24,12 @@
       "text": "Post",
       "iconPath": "images/post_grey.png",
       "selectedIconPath": "images/post_black.png"
-    }, {
-      "pagePath": "pages/user/user",
-      "text": "User",
-      "iconPath": "images/profile_grey.png",
-      "selectedIconPath": "images/profile_black.png"
     }]
   },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "RED",
+    "navigationBarTitleText": "🥰 My Little Food Diary",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
