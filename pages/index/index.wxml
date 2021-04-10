@@ -4,14 +4,14 @@
 </view>
 
 <view class="container">
-  <view class="cards">
+  <view class="cards" wx:for="{{posts}}" data-id="{{post.id}}" wx:for-item="post" bindtap="toPost">
    
-   <image src="/images_index/Restaurant_01.jpeg" mode="widthFix" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
+   <image src="{{post.picture}}" mode="widthFix" class="card-image" />
+   <text class="card-information">{{post.title}}</text>
  
    <view class="card-footer">
       <image src="/images_index/UserImage.jpeg" class="user-image" />
-      <text class="user-info">Eden Zou</text>
+      <text class="user-info">{{post.created_by}}</text>
       <view class="likes">
         <image src="/images/like.png" class="like-icon" />
       </view>
@@ -19,85 +19,5 @@
 
   </view>
 
- <view class="cards">
-   
-   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
- 
-   <view class="card-footer">
-    
-    <image src="/images_index/UserImage.jpeg" class="user-image" />
-    <text class="user-info">Eden Zou</text>
-    <view class="likes">
-       <image src="/images/like.png" class="like-icon" />
-     </view>
-
-   </view>
-
-  </view>
-
-  <view class="cards">
-   
-   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
- 
-   <view class="card-footer">
-    
-    <image src="/images_index/UserImage.jpeg" class="user-image" />
-    <text class="user-info">Eden Zou</text>
-    <view class="likes">
-      <image src="/images/like.png" class="like-icon" />
-    </view>
-  </view>
-
- </view>
-
- <view class="cards">
-   
-   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
- 
-   <view class="card-footer">
-    
-    <image src="/images_index/UserImage.jpeg" class="user-image" />
-    <text class="user-info">Eden Zou</text>
-    <view class="likes">
-      <image src="/images/like.png" class="like-icon" />
-    </view>
-  </view>
-  
- </view>
-
- <view class="cards">
-   
-   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
- 
-   <view class="card-footer">
-    
-    <image src="/images_index/UserImage.jpeg" class="user-image" />
-    <text class="user-info">Eden Zou</text>
-    <view class="likes">
-      <image src="/images/like.png" class="like-icon" />
-    </view>
-  </view>
-  
- </view>
-
- <view class="cards">
-   
-   <image src="/images_index/Restaurant_01.jpeg" class="card-image" />
-   <text class="card-information">List of Restaurants</text>
- 
-   <view class="card-footer">
-    
-    <image src="/images_index/UserImage.jpeg" class="user-image" />
-    <text class="user-info">Eden Zou</text>
-    <view class="likes">
-      <image src="/images/like.png" class="like-icon" />
-    </view>
-  </view>
-  
- </view>
 </view>
 

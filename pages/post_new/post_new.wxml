@@ -1,0 +1,42 @@
+<!--pages/post_new/post_new.wxml-->
+
+<form bindsubmit="formSubmit">
+  <view>
+    <view>Title</view>
+    <input type="text" name="title"/>
+  </view>
+  <view>
+    <view>Content</view>
+    <input type="text" name="content"/>
+  </view>
+
+  <view class="button-wrapper">
+    <button wx:if="{{image == ''}}" bindtap="choooseImg">Upload Image</button>
+  </view>
+  <view class="tips" wx:if="{{!images.length > 0}}" >Try to upload some images!</view>
+
+  <view wx:if="{{images.length > 0}}" class="title">↓ Scroll-view to display images horizontally.</view>
+  <scroll-view class="album" scroll-x="{{true}}">
+    <image mode="aspectFit" src="{{image}}"/>
+  </scroll-view>
+
+  <view wx:if="{{images.length > 0}}"  class="button-wrapper">
+    <button bindtap="preview">Preview Images</button>
+  </view>
+
+  <view>
+    <view class="button-wrapper">
+    <button class="long-button" bindtap="chooseLocation">Add a marker</button>
+  </view>
+    <map id="map1" 
+    latitude="{{mapData.latitude}}" 
+    longitude="{{mapData.longitude}}" 
+    markers="{{markers}}" 
+    scale="{{mapData.scale}}" 
+    bindmarkertap="selectMarker" 
+    class="map">
+</map>
+  </view>
+
+  <button form-type="submit">Submit</button>
+</form>

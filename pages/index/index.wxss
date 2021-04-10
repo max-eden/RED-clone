@@ -32,10 +32,9 @@
 
 .user-image {
   border-radius:50%;
-  height: 30px;
-  width: 30px;
+  height: 30rpx;
+  width: 30rpx;
   object-fit: cover;
-  margin: 8px;
 }
 
 .like-icon {
@@ -54,6 +53,7 @@
 }
 
 .user-info {
+  margin-left: 10rpx;
   font-size: 15px;
   font-weight: medium;
 }

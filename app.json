@@ -3,8 +3,14 @@
     "pages/index/index",
     "pages/post/post",
     "pages/user/user",
-    "pages/show/show"
-  ],
+    "pages/show/show",
+    "pages/post_new/post_new"
+  ],  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "可以知道你在哪里嘛？"
+    }
+  },
   "tabBar": {
     "color": "#CDCDCD",
     "selectedColor": "#000000",
