@@ -18,13 +18,6 @@
           "query": "",
           "scene": null
         },
-        {
-          "name": "pages/show/show",
-          "pathName": "pages/show/show",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
           "scene": null

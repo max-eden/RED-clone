@@ -5,13 +5,18 @@
   column-gap: 1em;
 }
 
+.SearchBar {
+  margin: 10px;
+}
+
 .cards{
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: inline-block;
   margin: 0 0 1em;
-  width: 100%
+  width: 100%;
+  border-radius: 2%;
 }
 
 .card-image {
