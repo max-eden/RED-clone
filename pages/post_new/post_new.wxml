@@ -11,13 +11,13 @@
   </view>
 
   <view class="button-wrapper">
-    <button bindtap="takePhoto">Upload Image</button>
+    <button wx:if="{{image == ''}}" bindtap="choooseImg">Upload Image</button>
   </view>
   <view class="tips" wx:if="{{!images.length > 0}}" >Try to upload some images!</view>
 
   <view wx:if="{{images.length > 0}}" class="title">↓ Scroll-view to display images horizontally.</view>
   <scroll-view class="album" scroll-x="{{true}}">
-    <image wx:for="{{images}}" mode="aspectFit" src="{{item}}"/>
+    <image mode="aspectFit" src="{{image}}"/>
   </scroll-view>
 
   <view wx:if="{{images.length > 0}}"  class="button-wrapper">

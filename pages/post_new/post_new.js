@@ -5,6 +5,7 @@ Page({
    * Page initial data
    */
   data: {
+    image: '',
     mapData: {
       // scale: value can be from the 3-20
       scale: 15,
@@ -14,45 +15,59 @@ Page({
     selectedMarker: false,
     markers: []
   },
-
-  formSubmit(e) {
-    let title = e.detail.value.title
-    let content = e.detail.value.content
-    let Posts = new wx.BaaS.TableObject('posts')
-    let newPost = Posts.create()
-    newPost.set({
-      title: title,
-      content: content,
-      picture: this.data.picture
-    })
-    newPost.save().then(res=>{  
-    },err => {{
-      console.log("err", err)
-      wx.showToast({
-        icon: 'error',
-        title: 'Pleaes fill all the fields',
-      })
-    }})
-  },
-
-  uploadImage: function(){
+  choooseImg: function(){
     const self = this
     wx.chooseImage({
-      success: function(res) {
-        let MyFile = new wx.BaaS.File()
-        let fileParams = {filePath: res.tempFilePaths[0]}
-        let metaData = {categoryName: 'SDK'}
-    
-        MyFile.upload(fileParams, metaData).then(res => {
-          let data = res.data  // res.data 为 Object 类型
-          console.log(res)
-          self.setData({
-            picture: res.data.file.path
-          })
+      count: 1,
+      success: res => {
+        console.log(res)
+        this.setData({
+          image: res.tempFilePaths[0]
         })
       }
     })
     
+  },
+  formSubmit(e) {
+    let MyFile = new wx.BaaS.File()
+    let fileParams = {filePath: this.data.image}
+    let metaData = {categoryName: 'SDK'}
+
+    MyFile.upload(fileParams, metaData).then(res => {
+      // let data = res.data  // res.data 为 Object 类型
+      let picture = res.data.file.path
+      let title = e.detail.value.title
+      let content = e.detail.value.content
+      let Posts = new wx.BaaS.TableObject('posts')
+      let newPost = Posts.create()
+      newPost.set({
+        title: title,
+        content: content,
+        picture: picture
+      })
+      newPost.save().then(res=>{  
+      },err => {{
+        console.log("err", err)
+        wx.showToast({
+          icon: 'error',
+          title: 'Pleaes fill all the fields',
+        })
+      }})
+    })
+  },
+
+  uploadImg(){
+    let MyFile = new wx.BaaS.File()
+    let fileParams = {filePath: res.tempFilePaths[0]}
+    let metaData = {categoryName: 'SDK'}
+
+    MyFile.upload(fileParams, metaData).then(res => {
+      let data = res.data  // res.data 为 Object 类型
+      console.log(res)
+      self.setData({
+        picture: res.data.file.path
+      })
+    })
   },
 
   selectMarker(e){

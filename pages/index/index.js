@@ -16,12 +16,23 @@ Page({
       self.setData({
         posts: res.data.objects
       })
-  })
+    })
+    
+    // let users = new wx.BaaS.TableObject('_userprofile')
+    // users.find().then(res => {
+    //   console.log('users',res)
+    // })
+
   },
+
+  
   toPost: function(e) {
     console.log('test', e)
-    // wx.navigateTo({
-    //   url: `/pages/show/detail?id=${e.currentTarget.dataset.id}`,
-    // });
+    wx.navigateTo({
+      url: '../show/show',
+      // url: `/pages/show/detail?id=${e.currentTarget.dataset.id}`,
+    })
+
+
   }
 })
