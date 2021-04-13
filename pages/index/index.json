@@ -1,7 +1,0 @@
-{
-  
-
-  "usingComponents": {
-     "search-bar": "../../lib/search-bar/index"
-  }
-}
