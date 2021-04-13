@@ -1,31 +1,18 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/post/post",
-    "pages/user/user",
-    "pages/show/show",
-    "pages/post_new/post_new"
+    "pages/landing/landing",
+    "pages/list/list",
+    "pages/space/space",
+    "pages/theater/theater",
+    "pages/confirm/confirm",
+    "pages/profile/profile"
   ],  
   "permission": {
     "scope.userLocation": {
       "desc": "可以知道你在哪里嘛？"
     }
   },
-  "tabBar": {
-    "color": "#CDCDCD",
-    "selectedColor": "#000000",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "Home",
-      "iconPath": "images/home_grey.png",
-      "selectedIconPath": "images/home_black.png"
-    }, {
-      "pagePath": "pages/post/post",
-      "text": "Post",
-      "iconPath": "images/post_grey.png",
-      "selectedIconPath": "images/post_black.png"
-    }]
-  },
+ 
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
